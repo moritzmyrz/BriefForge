@@ -1,0 +1,10 @@
+{
+  "text": "Q1 Product Sync — March 14, 2026\nAttendees: Sarah (PM), Marcus (Eng Lead), Priya (Design), Tom (QA)\n\nWe kicked off the meeting reviewing the backlog for the v2.4 release. Sarah confirmed the dashboard redesign is blocked on the final design handoff from Priya, expected by March 18th.\n\nMarcus raised a concern about the database migration. The team decided to proceed with SQLite for v2.4 and revisit PostgreSQL for v3.0. Marcus will own the migration script by end of week.\n\nPriya presented two sidebar layout options. The team aligned on Option B — collapsible nav with icon labels. Final decision, no further design review needed.\n\nTom flagged a critical bug in the export pipeline where PDFs over 10MB were silently failing. Needs a hotfix before v2.4.\n\nAction items:\n- Priya: deliver final design files by March 18th\n- Marcus: complete DB migration script by March 16th\n- Tom: file critical bug ticket for PDF export issue today\n- Sarah: schedule v2.4 release review for March 22nd",
+  "metadata": {
+    "source": "zoom-transcript",
+    "author": "Sarah (PM)",
+    "contentType": "meeting",
+    "tags": ["q1", "v2.4", "planning"]
+  },
+  "extractImmediately": true
+}

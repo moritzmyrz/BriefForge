@@ -1,0 +1,18 @@
+Q1 Product Sync — March 14, 2026
+Attendees: Sarah (PM), Marcus (Eng Lead), Priya (Design), Tom (QA)
+
+We kicked off the meeting reviewing the backlog for the v2.4 release. Sarah confirmed that the dashboard redesign is blocked on the final design handoff from Priya, which is expected by March 18th.
+
+Marcus raised a concern about the database migration for the new artifact storage schema. The team decided to proceed with SQLite for v2.4 and revisit PostgreSQL for v3.0. Marcus will own the migration script by end of week.
+
+Priya presented two options for the sidebar layout. The team aligned on Option B (collapsible nav with icon labels). This was a final decision — no further design review needed for that component.
+
+Tom flagged a critical bug in the export pipeline where PDFs over 10MB were silently failing. This needs a hotfix before the v2.4 release. Tom will create a ticket and assign it to the backend team.
+
+Action items:
+- Priya: deliver final design files by March 18th
+- Marcus: complete DB migration script by March 16th (end of week)
+- Tom: file critical bug ticket for PDF export issue today
+- Sarah: schedule v2.4 release review for March 22nd
+
+Next meeting: March 21st, same time.

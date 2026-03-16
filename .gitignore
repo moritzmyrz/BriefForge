@@ -32,3 +32,6 @@ logs/
 
 # Type generation
 drizzle/
+
+# pnpm
+.pnpm-store/

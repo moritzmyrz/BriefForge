@@ -1,0 +1,25 @@
+Ticket #8841 — Priority: High
+Submitted: March 15, 2026
+Customer: Acme Corp (Enterprise)
+Reported by: j.rodriguez@acmecorp.com
+
+Subject: Bulk export fails silently for datasets over 5000 rows
+
+Hi support team,
+
+We've been having a recurring issue with the bulk export feature since last Thursday. When we try to export datasets with more than 5000 rows to CSV, the job appears to start normally, shows progress up to about 40%, and then just stops without any error message. The file is never delivered to our S3 bucket.
+
+This is a blocker for our monthly reporting cycle which is due this Friday. We have about 12,000 rows to export.
+
+We've tried:
+- Reducing the export to 4,999 rows — this works fine
+- Exporting in two batches — same failure at ~40%
+- Clearing browser cache and retrying
+
+Environment: Chrome 122 on macOS. Using your API via the dashboard, not directly.
+
+Please treat this as urgent. Our CTO has been cc'd on this thread.
+
+Thanks,
+Juan Rodriguez
+Head of Data, Acme Corp

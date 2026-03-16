@@ -1,0 +1,55 @@
+{
+  "summary": "Q1 product sync covering v2.4 release blockers, a DB migration decision, a sidebar design decision, and a critical bug in the PDF export pipeline.",
+  "actionItems": [
+    {
+      "description": "Deliver final design files",
+      "assignee": "Priya",
+      "dueDate": "2026-03-18",
+      "priority": "high",
+      "confidence": 0.95
+    },
+    {
+      "description": "Complete DB migration script",
+      "assignee": "Marcus",
+      "dueDate": "2026-03-16",
+      "priority": "high",
+      "confidence": 0.95
+    },
+    {
+      "description": "File critical bug ticket for PDF export issue",
+      "assignee": "Tom",
+      "priority": "critical",
+      "confidence": 0.9
+    },
+    {
+      "description": "Schedule v2.4 release review",
+      "assignee": "Sarah",
+      "dueDate": "2026-03-22",
+      "priority": "medium",
+      "confidence": 0.9
+    }
+  ],
+  "decisions": [
+    {
+      "description": "Proceed with SQLite for v2.4 and revisit PostgreSQL for v3.0",
+      "madeBy": "Team",
+      "confidence": 0.95
+    },
+    {
+      "description": "Sidebar layout: Option B (collapsible nav with icon labels)",
+      "madeBy": "Team",
+      "rationale": "Final decision, no further design review needed",
+      "confidence": 0.98
+    }
+  ],
+  "entities": [
+    { "value": "Sarah", "type": "person", "confidence": 0.99 },
+    { "value": "Marcus", "type": "person", "confidence": 0.99 },
+    { "value": "Priya", "type": "person", "confidence": 0.99 },
+    { "value": "Tom", "type": "person", "confidence": 0.99 }
+  ],
+  "classification": "meeting",
+  "urgency": "high",
+  "confidence": 0.93,
+  "tags": ["v2.4", "release", "design", "database", "bug", "pdf-export"]
+}
