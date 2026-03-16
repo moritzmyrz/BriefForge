@@ -30,10 +30,10 @@
   },
   "main": "./dist/app/index.js",
   "scripts": {
-    "dev": "tsx watch src/app/index.ts",
+    "dev": "node --env-file=.env --watch --import tsx/esm src/app/index.ts",
     "build": "tsup",
     "start": "node dist/app/index.js",
-    "extract": "tsx cli/extract.ts",
+    "extract": "node --env-file=.env --import tsx/esm cli/extract.ts",
     "test": "vitest run",
     "test:watch": "vitest",
     "test:coverage": "vitest run --coverage",
@@ -41,7 +41,7 @@
     "format": "biome format --write .",
     "check": "biome check --write .",
     "typecheck": "tsc --noEmit",
-    "db:migrate": "tsx src/db/migrate.ts"
+    "db:migrate": "node --env-file=.env --import tsx/esm src/db/migrate.ts"
   },
   "dependencies": {
     "@fastify/cors": "^9.0.1",
